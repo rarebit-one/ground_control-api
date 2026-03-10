@@ -1,11 +1,14 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-
-# Specify your gem's dependencies in ground_control-api.gemspec
 gemspec
 
-gem "irb"
-gem "rake", "~> 13.0"
+gem "rails"
+gem "mission_control-jobs"
+gem "alba"
+gem "solid_queue"
+gem "sqlite3"
 
-gem "rubocop", "~> 1.21"
+group :test do
+  gem "rspec-rails"
+end
